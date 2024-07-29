@@ -22,7 +22,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Icons',
 			href: '/icons',
-			status: 'soon'
+			status: 'draft'
 		}
 	],
 	brands: [
@@ -115,7 +115,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Drawer',
 			href: '/drawer',
-			status: 'soon'
+			status: 'new'
 		},
 		{
 			title: 'Empty State',
@@ -145,7 +145,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Input',
 			href: '/input',
-			status: 'soon'
+			status: 'draft'
 		},
 		{
 			title: 'Keyboard Input',
@@ -160,12 +160,12 @@ export const aside_items: Aside = {
 		{
 			title: 'Menu',
 			href: '/menu',
-			status: 'soon'
+			status: 'new'
 		},
 		{
 			title: 'Modal',
 			href: '/modal',
-			status: 'soon'
+			status: 'draft'
 		},
 		{
 			title: 'Note',
@@ -275,7 +275,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Window',
 			href: '/window',
-			status: 'soon'
+			status: 'new'
 		}
 	]
 };

@@ -1,12 +1,14 @@
+import Accessibility from './accessibility.svg?component';
+import ArrowCircleUp from './arrow-circle-up.svg?component';
 import ArrowLeft from './arrow-left.svg?component';
 import ArrowRight from './arrow-right.svg?component';
 import ArrowUp from './arrow-up.svg?component';
 import Bell from './bell.svg?component';
 import Box from './box.svg?component';
 import BrandAssets from './brand-assets.svg?component';
-import CharBarMiddle from './chart-bar-middle.svg?component';
+import ChartBarMiddle from './chart-bar-middle.svg?component';
 import ChartBarPeak from './chart-bar-peak.svg?component';
-import CharTrendingDown from './chart-trending-down.svg?component';
+import ChartTrendingDown from './chart-trending-down.svg?component';
 import Check from './check.svg?component';
 import ChevronLeft from './chevron-left.svg?component';
 import ChevronRightSmall from './chevron-right-small.svg?component';
@@ -41,6 +43,7 @@ import LogoVercelCircle from './logo-vercel-circle.svg?component';
 import LogoVercel from './logo-vercel.svg?component';
 import MagnifyingGlass from './magnifying-glass.svg?component';
 import Minus from './minus.svg?component';
+import MoreHorizontal from './more-horizontal.svg?component';
 import Notification from './notification.svg?component';
 import Paperclip from './paperclip.svg?component';
 import PencilEdit from './pencil-edit.svg?component';
@@ -55,15 +58,17 @@ import ThemeSwitchLight from './theme-switch-light.svg?component';
 import ThemeSwitchSystem from './theme-switch-system.svg?component';
 
 export const Icons = {
+	Accessibility,
+	ArrowCircleUp,
 	ArrowLeft,
 	ArrowRight,
 	ArrowUp,
 	Bell,
 	Box,
 	BrandAssets,
-	CharBarMiddle,
+	ChartBarMiddle,
 	ChartBarPeak,
-	CharTrendingDown,
+	ChartTrendingDown,
 	Check,
 	ChevronLeft,
 	ChevronRightSmall,
@@ -98,6 +103,7 @@ export const Icons = {
 	LogoVercel,
 	MagnifyingGlass,
 	Minus,
+	MoreHorizontal,
 	Notification,
 	Paperclip,
 	PencilEdit,
