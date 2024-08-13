@@ -130,12 +130,12 @@ export const aside_items: Aside = {
 		{
 			title: 'Feedback',
 			href: '/feedback',
-			status: 'soon'
+			status: 'draft'
 		},
 		{
 			title: 'Gauge',
 			href: '/gauge',
-			status: 'soon'
+			status: 'draft'
 		},
 		{
 			title: 'Grid',
@@ -170,22 +170,22 @@ export const aside_items: Aside = {
 		{
 			title: 'Note',
 			href: '/note',
-			status: 'soon'
+			status: 'draft'
 		},
 		{
 			title: 'Pagination',
 			href: '/pagination',
-			status: 'soon'
+			status: 'new'
 		},
 		{
 			title: 'Progress',
 			href: '/progress',
-			status: 'soon'
+			status: 'new'
 		},
 		{
 			title: 'Radio',
 			href: '/radio',
-			status: 'soon'
+			status: 'draft'
 		},
 		{
 			title: 'Scroller',
@@ -200,7 +200,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Show more',
 			href: '/show-more',
-			status: 'soon'
+			status: 'new'
 		},
 		{
 			title: 'Skeleton',
@@ -215,7 +215,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Spinner',
 			href: '/spinner',
-			status: 'soon'
+			status: 'new'
 		},
 		{
 			title: 'Stack',
@@ -225,7 +225,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Status Dot',
 			href: '/status-dot',
-			status: 'soon'
+			status: 'new'
 		},
 		{
 			title: 'Switch',
@@ -240,7 +240,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Tabs',
 			href: '/tabs',
-			status: 'soon'
+			status: 'draft'
 		},
 		{
 			title: 'Text',
@@ -250,7 +250,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Textarea',
 			href: '/textarea',
-			status: 'soon'
+			status: 'draft'
 		},
 		{
 			title: 'Theme Switcher',
@@ -270,7 +270,7 @@ export const aside_items: Aside = {
 		{
 			title: 'Tooltip',
 			href: '/tooltip',
-			status: 'soon'
+			status: 'new'
 		},
 		{
 			title: 'Window',

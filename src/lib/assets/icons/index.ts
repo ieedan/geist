@@ -9,6 +9,7 @@ import BrandAssets from './brand-assets.svg?component';
 import ChartBarMiddle from './chart-bar-middle.svg?component';
 import ChartBarPeak from './chart-bar-peak.svg?component';
 import ChartTrendingDown from './chart-trending-down.svg?component';
+import CheckCircle from './check-circle.svg?component';
 import Check from './check.svg?component';
 import ChevronLeft from './chevron-left.svg?component';
 import ChevronRightSmall from './chevron-right-small.svg?component';
@@ -22,6 +23,10 @@ import Database from './database.svg?component';
 import ErrorStates from './error-states.svg?component';
 import ExternalSmall from './external-small.svg?component';
 import External from './external.svg?component';
+import FaceHappy from './face-happy.svg?component';
+import FaceSad from './face-sad.svg?component';
+import FaceSmile from './face-smile.svg?component';
+import FaceUnhappy from './face-unhappy.svg?component';
 import FileText from './file-text.svg?component';
 import Flag from './flag.svg?component';
 import FloppyDisk from './floppy-disk.svg?component';
@@ -29,6 +34,7 @@ import GitBranch from './git-branch.svg?component';
 import Globe from './globe.svg?component';
 import GridSquare from './grid-square.svg?component';
 import Inbox from './inbox.svg?component';
+import Information from './information.svg?component';
 import Key from './key.svg?component';
 import Link from './link.svg?component';
 import LoaderCircle from './loader-circle.svg?component';
@@ -42,6 +48,7 @@ import LogoV0 from './logo-v0.svg?component';
 import LogoVercelCircle from './logo-vercel-circle.svg?component';
 import LogoVercel from './logo-vercel.svg?component';
 import MagnifyingGlass from './magnifying-glass.svg?component';
+import Markdown from './markdown.svg?component';
 import Minus from './minus.svg?component';
 import MoreHorizontal from './more-horizontal.svg?component';
 import Notification from './notification.svg?component';
@@ -56,6 +63,7 @@ import Tabs from './tabs.svg?component';
 import ThemeSwitchDark from './theme-switch-dark.svg?component';
 import ThemeSwitchLight from './theme-switch-light.svg?component';
 import ThemeSwitchSystem from './theme-switch-system.svg?component';
+import Warning from './warning.svg?component';
 
 export const Icons = {
 	Accessibility,
@@ -69,6 +77,7 @@ export const Icons = {
 	ChartBarMiddle,
 	ChartBarPeak,
 	ChartTrendingDown,
+	CheckCircle,
 	Check,
 	ChevronLeft,
 	ChevronRightSmall,
@@ -82,6 +91,10 @@ export const Icons = {
 	ErrorStates,
 	ExternalSmall,
 	External,
+	FaceHappy,
+	FaceSad,
+	FaceSmile,
+	FaceUnhappy,
 	FileText,
 	Flag,
 	FloppyDisk,
@@ -89,6 +102,7 @@ export const Icons = {
 	Globe,
 	GridSquare,
 	Inbox,
+	Information,
 	Key,
 	Link,
 	LoaderCircle,
@@ -102,6 +116,7 @@ export const Icons = {
 	LogoVercelCircle,
 	LogoVercel,
 	MagnifyingGlass,
+	Markdown,
 	Minus,
 	MoreHorizontal,
 	Notification,
@@ -115,5 +130,6 @@ export const Icons = {
 	Tabs,
 	ThemeSwitchDark,
 	ThemeSwitchLight,
-	ThemeSwitchSystem
+	ThemeSwitchSystem,
+	Warning
 };

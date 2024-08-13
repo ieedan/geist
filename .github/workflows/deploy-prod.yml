@@ -1,18 +1,16 @@
-name: Docs Production Deployment
+name: Production Deployment
 on:
   push:
     branches:
       - main
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
-
 jobs:
-  publish:
+  deploy-production:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
-    name: Publish to Cloudflare Pages
+    name: Deploy Production Site to Cloudflare Pages
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -34,5 +32,5 @@ jobs:
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           projectName: geist
-          directory: ./build
+          directory: build
           deploymentName: Production
