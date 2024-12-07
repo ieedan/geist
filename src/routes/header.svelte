@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Icons } from '$lib/assets/icons';
 	import Command from '$lib/components/shared/command/command.svelte';
-	import ThemeSwitcher from '$lib/components/shared/theme-switcher.svelte';
+	import ThemeSwitcher from '$lib/components/ui/theme-switcher/theme-switcher.svelte';
 	import { Button } from '$lib/components/ui/button';
 	import { command_open_state } from '$lib/stores';
 </script>
@@ -25,7 +25,7 @@
 			<button
 				class="hidden h-8 w-[220px] cursor-pointer items-center justify-between rounded-md border border-gray-400 bg-transparent pl-2 pr-1.5 font-sans text-sm text-gray-700 outline-none hover:bg-background-200 focus-visible:shadow-focus-ring xl:flex"
 				type="button"
-				on:click={command_open_state.toggle}
+				onclick={command_open_state.toggle}
 			>
 				Search Geist
 				<kbd
@@ -46,8 +46,9 @@
 				href="https://github.com/shyakadavis/geist"
 				target="_blank"
 				rel="noopener"
+				title="GitHub Repository"
 			>
-				<Icons.LogoGithub width="20" height="20" aria-hidden="true" />
+				<Icons.LogoGithub width="24" height="24" aria-hidden="true" />
 			</Button>
 
 			<div class="hidden xl:block">
@@ -62,7 +63,7 @@
 					shape="circle"
 					size="sm"
 					class="text-gray-1000 xl:hidden"
-					on:click={command_open_state.toggle}
+					onclick={command_open_state.toggle}
 				>
 					<Icons.MagnifyingGlass width="20" height="20" aria-hidden="true" />
 				</Button>

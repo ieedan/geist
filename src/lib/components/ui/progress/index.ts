@@ -5,7 +5,7 @@ export const progress_bar_variants = tv({
 	base: 'h-full w-full flex-1 rounded-full transition-[width,transform,background-color] ease-in',
 	variants: {
 		variant: {
-			default: 'bg-gray-200',
+			default: 'bg-gray-1000',
 			success: 'bg-blue-700',
 			error: 'bg-red-700',
 			warning: 'bg-amber-700',
@@ -17,11 +17,6 @@ export const progress_bar_variants = tv({
 	}
 });
 
-type Variant = VariantProps<typeof progress_bar_variants>['variant'];
-
-export type Props = {
-	variant?: Variant;
-	colors?: Record<number, string>;
-};
+export type Variant = VariantProps<typeof progress_bar_variants>['variant'];
 
 export { Root as Progress, Root };
