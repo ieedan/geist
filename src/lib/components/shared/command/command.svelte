@@ -6,7 +6,7 @@
 	import * as Drawer from '$lib/components/ui/drawer';
 	import { aside_items } from '$lib/config/sitemap';
 	import { command_open_state } from '$lib/stores';
-	import { MediaQuery } from 'runed';
+	import { MediaQuery } from 'svelte/reactivity';
 
 	const is_desktop = new MediaQuery('(min-width: 640px)');
 
@@ -20,7 +20,7 @@
 
 <svelte:document onkeydown={doc_keydown} />
 
-{#if is_desktop.matches}
+{#if is_desktop.current}
 	<Command.Dialog bind:open={$command_open_state} close_button="esc" class="w-full max-w-[640px]">
 		<Command.Input placeholder="Search..." class="h-[53px] px-2 text-lg" hide_search_icon />
 		<Command.List class="h-[436px] max-h-none">
@@ -33,19 +33,22 @@
 		<Drawer.Content preventScroll class="h-3/4" hide_dismiss_bar>
 			<Command.Root>
 				<Drawer.Header
-					class="flex h-[53px] items-center justify-between px-2 [&_[data-command-input-wrapper]]:w-full"
+					class="flex h-[53px] items-center justify-between border-b p-0 py-4 [&_[data-command-input-wrapper]]:w-full [&_[data-command-input-wrapper]]:border-b-0"
 				>
-					<Command.Input placeholder="Search..." class="h-7 px-2 text-base" hide_search_icon />
+					<Command.Input placeholder="Search..." class="h-7 w-full text-base" hide_search_icon />
 					<Button
 						onclick={command_open_state.toggle}
 						size="sm"
 						variant="secondary"
-						class="h-5 px-1.5 text-xs"
+						class="mr-2 h-5 px-1.5 text-xs"
 					>
 						Esc
 					</Button>
 				</Drawer.Header>
-				{@render command_items()}
+				<Command.List class="max-h-none">
+					{@render empty_command()}
+					{@render command_items()}
+				</Command.List>
 			</Command.Root>
 		</Drawer.Content>
 	</Drawer.Root>
